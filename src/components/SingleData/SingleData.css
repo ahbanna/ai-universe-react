@@ -1,0 +1,10 @@
+.date {
+  display: flex;
+}
+.date p {
+  margin-left: 8px;
+}
+.data-link {
+  display: flex;
+  justify-content: space-between;
+}

@@ -14,7 +14,9 @@ const Card = () => {
     <div className="single-card">
       {data.map((singleData) => {
         // console.log(singleData.name);
-        return <SingleData singleData={singleData}></SingleData>;
+        return (
+          <SingleData singleData={singleData} key={singleData.id}></SingleData>
+        );
       })}
     </div>
   );

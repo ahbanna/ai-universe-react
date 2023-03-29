@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import "./SingleData.css";
 
 const SingleData = (props) => {
   // console.log(props);
@@ -10,8 +14,30 @@ const SingleData = (props) => {
       <Card>
         <Card.Img variant="top" src={image} />
         <Card.Body>
+          <h5>Features</h5>
+          <Card.Text>
+            {features.map((feature, index) => (
+              <p>
+                {index + 1}. <span> </span>
+                {feature}
+              </p>
+            ))}
+          </Card.Text>
+          <hr />
           <Card.Title>{name}</Card.Title>
-          <Card.Text>{features}</Card.Text>
+          <div className="data-link">
+            <div className="date">
+              <span>
+                <FontAwesomeIcon icon={faCalendar} />
+              </span>
+              <p> {published_in}</p>
+            </div>
+            <div className="link">
+              <a href="">
+                <FontAwesomeIcon icon={faAngleRight} />
+              </a>
+            </div>
+          </div>
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
