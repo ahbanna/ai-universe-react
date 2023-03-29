@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +8,7 @@ import "./SingleData.css";
 const SingleData = (props) => {
   // console.log(props);
   const { image, features, published_in, name } = props.singleData;
+
   return (
     <div>
       <Card>
@@ -38,7 +38,6 @@ const SingleData = (props) => {
               </a>
             </div>
           </div>
-          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
     </div>

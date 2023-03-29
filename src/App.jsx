@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       <Btn>Sort By Date</Btn>
       <Card></Card>
-      <Btn>See More</Btn>
+      {/* <Btn>See More</Btn> */}
     </div>
   );
 }
